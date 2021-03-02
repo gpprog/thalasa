@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ψαραγορά Ιλίου</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/90d0a39d64.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../thalasa/css/style.css.css">
+
+</head> 
+<body> 
+
+<!--Navigation Bar-->
+    
+  <div class="container-fluid" >
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a href="index.html" class="navbar-brand " >ΑΡΧΙΚΗ</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar2">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse" id="navbar2">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="navbar-brand" href="about.html">ΠΟΙΟΙ ΕΙΜΑΣΤΕ</a></li>
+          <li class="nav-item"><a class="navbar-brand" href="contact.html">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+          <li class="nav-item"><a class="navbar-brand" href="gallery.html">GALLERY</a></li>
+        </ul>
+        <div class="dropdown">          
+          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">ΜΕΝΟΥ ΕΒΔΟΜΑΔΑΣ</button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#monday">Δευτέρα</a>
+              <a class="dropdown-item" href="#tuesday">Τρίτη</a>
+              <a class="dropdown-item" href="#wednesday">Τετάρτη</a>
+              <a class="dropdown-item" href="#thursday">Πέμπτη</a>
+              <a class="dropdown-item" href="#friday">Παρασκευή</a>
+              <a class="dropdown-item" href="#saturday">Σάββατο</a>
+              <a class="dropdown-item" href="#sunday">Κυριακή</a>
+            </div>          
+        </div>
+    </nav>
+  </div>
+    
+    
+<!--End oF navigationn Bar-->
+
+
+  <!--Carousel Slider-->
+  <div class="container-fluid" >      
+    <div id="demo" class="carousel slide" data-ride="carousel">
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+        
+          <!-- The slideshow -->
+        <div class="  carousel-inner">
+          <div class="carousel-item active">
+            <img class="img-fluid" src="./img/carousel_1.jpg">
+            <div class="carousel-caption"><h4>Τσιπούρα Ψητή</h4></div>
+          </div>
+          <div class="carousel-item">
+            <img class="img-fluid" src="img/carousel_2.jpg" >
+            <div class="carousel-caption" id="perka"><h4>Πέρκα με sauce μουστάρδας</h4></div>
+
+          </div>
+          <div class="carousel-item">
+            <img  class="img-fluid" src="img/carousel_3.jpg" >
+            <div class="carousel-caption d-none d-md-block" ><h4>Γαριδοσαλάτα</h4></div>
+
+          </div>
+        </div>
+        
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>    
+  </div>
+  <!--End of Carousel slider-->
+
+    <!--Jumbotron-->
+
+
+    <div class="container-fluid">
+      <div class="jumbotron">
+        <h1 class="display-3">Θάλασσα</h1>
+        <p class="lead">Ψάρι ψητό καθημερινά ! </p>
+        <hr class="my-2">
+        <p>Ελάτε να μας γνωρίσετε</p>
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" href="contact.html" role="button">ΕΠΙΚΟΙΝΩΝΙΑ</a>
+        </p>
+      </div>
+    </div>
+    <!--End of Jumbotron-->
+
+
+
+
+<!-- Week's Menu-->
+    <div class="container-fluid" id="weeks">
+      <div class="row">                  
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12" id="col_1">          
+          <h4 class="font-weight-bold text-center text-light">ΕΒΔΟΜΑΔΙΑΙΟ ΜΕΝΟΥ - ΜΑΓΕΙΡΕΥΤΑ</h4>
+          <h3 id="monday"><span class="badge badge-secondary">Δευτέρα</span></h3>           
+          <ul>            
+            <li><a href="gallery.html#row_1">Μπακαλιάρος σκορδαλιά</a><span class="badge badge-primary">8.00&euro;</span></li>
+            
+            <li><a href="gallery.html#row_1">Σολομός με ψητά λαχανικά</a><span class="badge badge-primary">8.00&euro;</span></li>
+          </ul>         
+          
+          <h3 id="tuesday"><span  class="badge badge-secondary">Τρίτη</span></h3>
+          <ul>
+            <li><a href="gallery.html#row_1">Μπιφτέκια σολομού ή τόνου</a><span class="badge badge-primary">7.00&euro;</span></li>
+            <li><a href="gallery.html#row_2">Μακαρόνια με γαρίδες και pesto</a><span class="badge badge-primary">7.00&euro;</span> </li>
+          </ul>
+          
+          <h3 id="wednesday"><span class="badge badge-secondary"secondary>Τετάρτη</span></h3>
+          <ul>
+            <li><a href="gallery.html#row_2">Σουπιές με σπανάκι</a><span class="badge badge-primary">7.00&euro;</span> </li>
+            <li><a href="gallery.html#row_2">Σολομος με σάλτσα μουστάδα και μανιτάρια</a><span class="badge badge-primary">8.50&euro;</span></li>
+          </ul>
+          <h3 id="thursday"><span class="badge badge-secondary">Πέμπτη</span></h3>
+          <ul>
+            <li><a href="gallery.html#row_3">Παστίτσιο τόνου</a><span class="badge badge-primary">7.00&euro;</span></li>
+            <li><a href="gallery.html#row_3">Αγγινάρες αλά πολίτα με σουπιές</a><span class="badge badge-primary">8.50&euro;</span></li>
+            <li><a href="gallery.html#row_3allery.html#row_3">Γαρίδες με κάρυ, ρύζι και γάλα καρύδας</a><span class="badge badge-primary">7.00&euro;</span></li>
+          </ul>
+          <h3 id="friday"><span class="badge badge-secondary">Παρασκευή</span></h3> 
+          <ul>
+            <li><a href="gallery.html#row_4">Ρεβυθάδα με γαρίδες</a><span class="badge badge-primary">13.00&euro;</span></li>
+            <li><a href="gallery.html#row_4">Φαρφάλες με θράψαλο κοκκινιστό</a><span class="badge badge-primary">7.50&euro;</span></li>
+            <li><a href="gallery.html#row_4">Παέγια θαλασσινών</a><span class="badge badge-primary">7.00&euro;</span></li>
+          </ul>
+
+          <h3 id="saturday"><span class="badge badge-secondary">Σάββατο</span></h3> 
+          <ul>
+            <li><a href="gallery.html#row_5">Πέρκα φούρνου με sauce μουστάρδα</a><span class="badge badge-primary">8.00&euro;</span></li>
+            <li><a href="gallery.html#row_5">Σαρδέλα φούρνου με λαχανικά και ούζο</a><span class="badge badge-primary">7.00&euro;</span></li>
+            <li><a href="gallery.html#row_5">Γαριδόσουπα</a><span class="badge badge-primary">7.00&euro;</span></li> 
+          </ul>
+
+          <h3 id="sunday"><span class="badge badge-secondary">Κυριακή</a></span></h3> 
+          <ul>
+            <li><a href="gallery.html#row_6">Μπιάνκο Κερκυραϊκό</a><span class="badge badge-primary">9.50&euro;</span></li>
+            <li><a href="gallery.html#row_6">Κριθαρότο θαλασσινών</a><span class="badge badge-primary">7.00&euro;</span></li>            
+            <li><a href="gallery.html#row_6">Νούντλς με γαρίδες</a><span class="badge badge-primary">7.50&euro;</span></li>
+          </ul>  
+        </div>
+        <div class="col" id="col_2">            
+          <div class="col" >
+            <h4 class="font-weight-bold text-center text-light">ΚΑΘΗΜΕΡΙΝΑ ΠΙΑΤΑ</h4>
+            <h5>ΚΡΥΑ ΣΥΝΟΔΕΥΤΙΚΑ</h5>
+            <ul>
+              <li><a href="#">Βραστά λαχανικά</a><span class="badge badge-primary">3.00&euro;</span></li>              
+              <li><a href="#">Χόρτα</a><span class="badge badge-primary">3.00&euro;</span></li>
+              <li><a href="#">Πατζάρια</a><span class="badge badge-primary">3.00&euro;</span></li> 
+              <li><a href="#">Γαριδοσαλάτα</a><span class="badge badge-primary">4.00&euro;</span></li>
+              <li><a href="#">Σαλάτα πέννες με τόνου</a><span class="badge badge-primary">4.50&euro;</span></li>
+              <li><a href="#">Σαρδέλα μαρινάτη</a><span class="badge badge-primary">6.00&euro;</span></li>
+              <li><a href="#">Ταμπουλέ</a> <span class="badge badge-primary">3.50&euro;</span></li>              
+              <li><a href="#">Μαυρομάτικα με γαύρο μαρινάτο</a><span id= "big_price" class="badge badge-primary">3.50&euro;</span></li>
+              <li><a href="#">Πατατοσαλάτα</a><span class="badge badge-primary">2.50&euro;</span></li>
+              <li><a href="#">Φάβα</a><span class="badge badge-primary">2.50&euro;</span></li>              
+              <li><a href="#">Χταπόδι ξυδάτο</a><span class="badge badge-primary">5.50&euro;</span></li>
+              <li><a href="#">Σκορδαλιά</a><span class="badge badge-primary">1.00&euro;</span></li>
+              <li><a href="#">Πράσινη σαλάτα με σολομό</a><span class="badge badge-primary">7.00&euro;</span></li>
+              <li><a href="#">Πράσινη σαλάτα με γαρίδες</a><span class="badge badge-primary">6.00&euro;</span></li>
+              <li><a href="#">Γαύρος μαρινάτος</a><span class="badge badge-primary">6.00&euro;</span></li>                   
+            </ul> 
+            <h5>ΜΑΓΕΙΡΕΥΤΑ-ΣΥΝΟΔΕΥΤΙΚΑ</h5>
+            <ul>
+              <li><a href="gallery.html#row_7">Τσιπούρα ψητή</a><span class="badge badge-primary">6.00&euro;</span></li>
+              <li><a href="gallery.html#row_7">Ψαρόσουπα</a><span class="badge badge-primary">5.00&euro;</span></li>
+              <li><a href="gallery.html#row_7">Πατάτες baby</a><span class="badge badge-primary">3.50&euro;</span></li>
+              <li><a href="#">Ρύζι με λαχανικά</a><span class="badge badge-primary">3.50&euro;</span></li>
+            </ul>
+          
+          </div>
+        </div>        
+      </div>
+    </div>
+  <!--End of week's Menu-->
+    
+  
+
+
+
+
+  <!--        footer         -->
+  <div class="container-fluid" >
+    <footer class="bg-light text-center text-lg-start">
+        <div class="row no-guters" id="footer_container">
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                <div id=footer-text>
+                    <h5>Ακολουθήστε μας στα κοινωνικά δίκτυα</h5>
+                    <p class="pt-5">
+                    <a href="facebook.com"><i class="fab fa-facebook px-3"></i></a>
+                    <a href="instagram.com"> <i class="fab fa-instagram px-3"></i></a>
+                    <i class="fab fa-youtube px-3"></i>
+                    </p>              
+                </div>
+            </div>           
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5>ΣΥΝΕΡΓΑΤΕΣ</h5>                  
+                <ul class="list-unstyled mb-0">
+                <li><a href="#!" class="text-dark">Selonda</a></li>
+                <li><a href="#!" class="text-dark">Νηρεύς</a></li>
+                <li><a href="#!" class="text-dark">Άνεμος</a></li>
+                <li><a href="#!" class="text-dark">Το Νησί</a></li>
+                </ul>
+            </div>    
+      
+            
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-0">συνταγες</h5>    
+                <ul class="list-unstyled">
+                    <li><a href="#!" class="text-dark">Σολομος a la creme</a></li>
+                    <li><a href="#!" class="text-dark">Χταπόδι με μακαρονάκι</a></li>
+                    <li><a href="#!" class="text-dark">Γιουβετσάκι γαρίδας</a></li>
+                    <li><a href="#!" class="text-dark">Ριζότο θαλασσινών</a></li>
+                </ul>                    
+            </div>
+        </div>
+        
+      
+      <!-- Copyright -->
+        
+        <div class="row" id="copyright">
+            <div class="col" id="logo">
+            </div>
+            <div class="col" id="copyright-text">
+              © 2021 Copyright:
+            <a class="text-light" href="https://mdbootstrap.com/">www.thalasa.com</a>
+            </div>
+          
+        </div>     
+    </footer>
+</div>
+      <!--  End of Footer -->
+        
+
+        
+  </div>
+<script src="../thalasa/js/thalasa.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+
+</body>
+</html>
