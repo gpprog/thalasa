@@ -1,89 +1,246 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en">
+<head>
+  <title>Ψαραγορά Ιλίου</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/90d0a39d64.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/8.2.9/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/8.2.9/firebase-auth.js"></script>
-    <script defer src="/__/firebase/8.2.9/firebase-database.js"></script>
-    <script defer src="/__/firebase/8.2.9/firebase-firestore.js"></script>
-    <script defer src="/__/firebase/8.2.9/firebase-functions.js"></script>
-    <script defer src="/__/firebase/8.2.9/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/8.2.9/firebase-storage.js"></script>
-    <script defer src="/__/firebase/8.2.9/firebase-analytics.js"></script>
-    <script defer src="/__/firebase/8.2.9/firebase-remote-config.js"></script>
-    <script defer src="/__/firebase/8.2.9/firebase-performance.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+</head> 
+<body> 
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+  <!-------------------------------Navigation Bar--------------------------------------------->
+
+  <div class="container-fluid"  id="top-logo">
+    <div class="container-fluid"  >
+
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a href="index.html" class="navbar-brand ml-2" >ΑΡΧΙΚΗ</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar2">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbar2">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="navbar-brand" href="about.html">ΠΟΙΟΙ ΕΙΜΑΣΤΕ</a></li>
+            <li class="nav-item"><a class="navbar-brand" href="contact.html">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+            <li class="nav-item"><a class="navbar-brand" href="gallery.html">GALLERY</a></li>
+          </ul>
+          <div class="dropdown">          
+            <button type="button" class="navbar-brand btn dropdown-toggle" data-toggle="dropdown">ΜΕΝΟΥ ΕΒΔΟΜΑΔΑΣ</button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#monday">Δευτέρα</a>
+                <a class="dropdown-item" href="#tuesday">Τρίτη</a>
+                <a class="dropdown-item" href="#wednesday">Τετάρτη</a>
+                <a class="dropdown-item" href="#thursday">Πέμπτη</a>
+                <a class="dropdown-item" href="#friday">Παρασκευή</a>
+                <a class="dropdown-item" href="#saturday">Σάββατο</a>
+                <a class="dropdown-item" href="#sunday">Κυριακή</a>
+              </div>
+          </div>  
+      </nav>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+  </div>   
+  
+    
+    
+  <!-------------------------------End of Navigation Bar--------------------------------------->
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+  <!-------------------------------Carousel Slider------------------------------------>
+  <div class="container-fluid" id="carousel-cont">      
+    <div id="demo" class="carousel slide" data-ride="carousel">
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+        
+          <!-- The slideshow -->
+        <div class="  carousel-inner">
+          <div class="carousel-item active">
+            <img class="img-fluid" src="./img/carousel_1.jpg">
+          </div>
+          <div class="carousel-item">
+            <img class="img-fluid" src="img/carousel_2.jpg" >
+
+          </div>
+          <div class="carousel-item">
+            <img  class="img-fluid" src="img/carousel_3.jpg" >
+
+          </div>
+        </div>
+        
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>    
+  </div>
+  <!---------------------------End of Carousel slider------------------------------>
+
+  <!------------------------------Jumbotron---------------------------------------->
+
+
+    <div class="container-fluid">
+      <div class="jumbotron">
+        <h1 class="display-3">Θάλασσα</h1>
+        <p class="lead">Ψάρι ψητό καθημερινά ! </p>
+        <hr class="my-2">
+        <p>Ελάτε να μας γνωρίσετε</p>
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" href="contact.html" role="button">ΕΠΙΚΟΙΝΩΝΙΑ</a>
+        </p>
+      </div>
+    </div>
+    <!-----------------------------End of Jumbotron------------------------------------->
+
+
+
+
+<!------------------------------------ Week's Menu--------------------------------------------->
+    <div class="container-fluid" id="weeks">
+      <div class="row">                  
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12" id="col_1">          
+          <h4 class="font-weight-bold text-center text-light">ΕΒΔΟΜΑΔΙΑΙΟ ΜΕΝΟΥ - ΜΑΓΕΙΡΕΥΤΑ</h4>
+          <h3 id="monday"><span class="badge badge-secondary">Δευτέρα</span></h3>           
+          <ul>            
+            <li><a href="gallery.html#row_1" >Μπακαλιάρος σκορδαλιά</a><span class="badge badge-primary">8.00&euro;</span></li>            
+            <li><a href="gallery.html#row_1">Σολομός με ψητά λαχανικά</a><span class="badge badge-primary">8.00&euro;</span></li>
+          </ul>         
+          
+          <h3 id="tuesday"><span  class="badge badge-secondary">Τρίτη</span></h3>
+          <ul>
+            <li><a href="gallery.html#row_1">Μπιφτέκια σολομού ή τόνου</a><span class="badge badge-primary">7.00&euro;</span></li>
+            <li><a href="gallery.html#row_2">Μακαρόνια με γαρίδες και pesto</a><span class="badge badge-primary">7.00&euro;</span> </li>
+          </ul>
+          
+          <h3 id="wednesday"><span class="badge badge-secondary"secondary>Τετάρτη</span></h3>
+          <ul>
+            <li><a href="gallery.html#row_2">Σουπιές με σπανάκι</a><span class="badge badge-primary">7.00&euro;</span> </li>
+            <li><a href="gallery.html#row_2">Σολομος με σάλτσα μουστάδα και μανιτάρια</a><span class="badge badge-primary">8.50&euro;</span></li>
+          </ul>
+          <h3 id="thursday"><span class="badge badge-secondary">Πέμπτη</span></h3>
+          <ul>
+            <li><a href="gallery.html#row_3">Παστίτσιο τόνου</a><span class="badge badge-primary">7.00&euro;</span></li>
+            <li><a href="gallery.html#row_3">Αγγινάρες αλά πολίτα με σουπιές</a><span class="badge badge-primary">8.50&euro;</span></li>
+            <li><a href="gallery.html#row_3allery.html#row_3">Γαρίδες με κάρυ, ρύζι και γάλα καρύδας</a><span class="badge badge-primary">7.00&euro;</span></li>
+          </ul>
+          <h3 id="friday"><span class="badge badge-secondary">Παρασκευή</span></h3> 
+          <ul>
+            <li><a href="gallery.html#row_4">Ρεβυθάδα με γαρίδες</a><span class="badge badge-primary">13.00&euro;</span></li>
+            <li><a href="gallery.html#row_4">Φαρφάλες με θράψαλο κοκκινιστό</a><span class="badge badge-primary">7.50&euro;</span></li>
+            <li><a href="gallery.html#row_4">Παέγια θαλασσινών</a><span class="badge badge-primary">7.00&euro;</span></li>
+          </ul>
+
+          <h3 id="saturday"><span class="badge badge-secondary">Σάββατο</span></h3> 
+          <ul>
+            <li><a href="gallery.html#row_5">Πέρκα φούρνου με sauce μουστάρδα</a><span class="badge badge-primary">8.00&euro;</span></li>
+            <li><a href="gallery.html#row_5">Σαρδέλα φούρνου με λαχανικά και ούζο</a><span class="badge badge-primary">7.00&euro;</span></li>
+            <li><a href="gallery.html#row_5">Γαριδόσουπα</a><span class="badge badge-primary">7.00&euro;</span></li> 
+          </ul>
+
+          <h3 id="sunday"><span class="badge badge-secondary">Κυριακή</a></span></h3> 
+          <ul>
+            <li><a href="gallery.html#row_6">Μπιάνκο Κερκυραϊκό</a><span class="badge badge-primary">9.50&euro;</span></li>
+            <li><a href="gallery.html#row_6">Κριθαρότο θαλασσινών</a><span class="badge badge-primary">7.00&euro;</span></li>            
+            <li><a href="gallery.html#row_6">Νούντλς με γαρίδες</a><span class="badge badge-primary">7.50&euro;</span></li>
+          </ul>  
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12" id="col_2">        
+          <h4 class="font-weight-bold text-center text-light">ΚΑΘΗΜΕΡΙΝΑ ΠΙΑΤΑ</h4>
+          <h5>ΚΡΥΑ ΣΥΝΟΔΕΥΤΙΚΑ</h5>
+          <ul>
+            <li><a href="gallery.html#row_8">Βραστά λαχανικά</a><span class="badge badge-primary">3.00&euro;</span></li>              
+            <li><a href="gallery.html#row_8">Χόρτα</a><span class="badge badge-primary">3.00&euro;</span></li>
+            <li><a href="gallery.html#row_9">Πατζάρια</a><span class="badge badge-primary">3.00&euro;</span></li> 
+            <li><a href="gallery.html#row_9">Γαριδοσαλάτα</a><span class="badge badge-primary">4.00&euro;</span></li>
+            <li><a href="gallery.html#row_9">Σαλάτα πέννες με τόνο</a><span class="badge badge-primary">4.50&euro;</span></li>
+            <li><a href="gallery.html#row_10">Σαρδέλα μαρινάτη</a><span class="badge badge-primary">6.00&euro;</span></li>
+            <li><a href="gallery.html#row_10">Ταμπουλέ</a> <span class="badge badge-primary">3.50&euro;</span></li>              
+            <li><a href="gallery.html#row_10">Μαυρομάτικα με γαύρο μαρινάτο</a><span class="badge badge-primary">3.50&euro;</span></li>
+            <li><a href="gallery.html#row_11">Πατατοσαλάτα</a><span class="badge badge-primary">2.50&euro;</span></li>
+            <li><a href="gallery.html#row_11">Φάβα</a><span class="badge badge-primary">2.50&euro;</span></li>              
+            <li><a href="gallery.html#row_11">Χταπόδι ξυδάτο</a><span class="badge badge-primary">5.50&euro;</span></li>
+            <li><a href="gallery.html#row_12">Σκορδαλιά</a><span class="badge badge-primary">1.00&euro;</span></li>
+            <li><a href="gallery.html#row_12">Πράσινη σαλάτα με σολομό</a><span class="badge badge-primary">7.00&euro;</span></li>
+            <li><a href="gallery.html#row_12">Πράσινη σαλάτα με γαρίδες</a><span class="badge badge-primary">6.00&euro;</span></li>
+            <li><a href="gallery.html#single">Γαύρος μαρινάτος</a><span class="badge badge-primary">6.00&euro;</span></li>                   
+          </ul> 
+          <h5>ΜΑΓΕΙΡΕΥΤΑ-ΣΥΝΟΔΕΥΤΙΚΑ</h5>
+          <ul>
+            <li><a href="gallery.html#row_7">Τσιπούρα ψητή</a><span class="badge badge-primary">6.00&euro;</span></li>
+            <li><a href="gallery.html#row_7">Ψαρόσουπα</a><span class="badge badge-primary">5.00&euro;</span></li>
+            <li><a href="gallery.html#row_7">Πατάτες baby</a><span class="badge badge-primary">3.50&euro;</span></li>
+            <li><a href="gallery.html#row_8">Ρύζι με λαχανικά</a><span class="badge badge-primary">3.50&euro;</span></li>
+          </ul>         
+        </div>        
+      </div>
+    </div>
+<!--------------------------------End of Week's Menu---------------------------------->
+
+<!------------------------------footer-------------------------------------->
+  <div class="container-fluid" id = "footer-all" >
+    <footer class=" text-center text-lg-start">
+        <div class="row no-guters" id="footer_container">
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                <div id=footer-text>
+                    <h5>Ακολουθήστε μας στα κοινωνικά δίκτυα</h5>
+                    <p class="pt-5">
+                    <a href="facebook.com"><i class="fab fa-facebook px-3"></i></a>
+                    <a href="instagram.com"> <i class="fab fa-instagram px-3"></i></a>
+                    <a href="youtube.com"><i class="fab fa-youtube px-3"></i></a>
+                    </p>              
+                </div>
+            </div>           
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5>ΣΥΝΕΡΓΑΤΕΣ</h5>                  
+                <ul class="list-unstyled mb-0">
+                <li><a href="#!" class="text-dark">Selonda</a></li>
+                <li><a href="#!" class="text-dark">Νηρεύς</a></li>
+                <li><a href="#!" class="text-dark">Άνεμος</a></li>
+                <li><a href="#!" class="text-dark">Το Νησί</a></li>
+                </ul>
+            </div>    
+      
+            
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-0">συνταγες</h5>    
+                <ul class="list-unstyled">
+                    <li><a href="https://akispetretzikis.com/el/categories/zymarika/penes-me-votka-kai-solomo" class="text-dark">Πένες με βότκα και σολομό</a></li>
+                    <li><a href="https://akispetretzikis.com/el/categories/zymarika/chtapodi-me-kofto-makaronaki" class="text-dark">Χταπόδι με κοφτό μακαρονάκι</a></li>
+                    <li><a href="https://akispetretzikis.com/el/categories/zymarika/chtapodi-me-kofto-makaronaki" class="text-dark">Γαρίδες γιουβέτσι</a></li>
+                    <li><a href="https://akispetretzikis.com/el/categories/ryzi-amp-patates/rizoto-me-thalassina" class="text-dark">Ριζότο θαλασσινών</a></li>
+                </ul>                    
+            </div>
+        </div>
+        
+      
+      <!-- Copyright -->
+        
+        <div class="row" id="copyright">
+          <div class="col" id="logo"></div>
+            
+          <div class="col" id="copyright-text">
+              <small class="year"> © 2021 Copyright: </small>
+            <a class="text-light" href="thalasa-4778f.web.app">www.thalasa.com</a>
+          </div>          
+        </div>     
+    </footer>
+  </div>
+      <!-----------------------------End of Footer--------------------------- -->
+        
+
+        
+  
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+</body>
 </html>
