@@ -256,8 +256,7 @@ textarea{
     background-color: rgba(72, 127, 173, 0.5);
 }
 
-footer{  
-     
+footer{       
     color:black;
 }
 
@@ -348,6 +347,7 @@ footer{
 }
 
 #gallery-title{
+    text-shadow: 2px 2px #6b8884;
     padding-top:1rem;
     height:4em;
     background-color: #a3bed6;
